@@ -33,6 +33,10 @@ public class SlowMine implements ModInitializer {
 		AttackBlockCallback.EVENT.register(new AttackBlockCallback() {
             @Override
             public @NonNull InteractionResult interact(Player player, Level level, InteractionHand hand, BlockPos pos, Direction direction) {
+				if (level.isClientSide()) {
+					return InteractionResult.PASS;
+				}
+
 				final var diff = level.getDifficulty();
 
 				final double scale = switch (diff) {
