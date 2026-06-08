@@ -1,9 +1,11 @@
 # Slow Mine
 
-## Setup
+This mod sets your mining base speed based on the world difficulty:
 
-For setup instructions, please see the [Fabric Documentation page](https://docs.fabricmc.net/develop/getting-started/creating-a-project#setting-up) related to the IDE that you are using.
+- Peaceful & Easy: 1.3
+- Normal: 1.0 (default)
+- Hard: 0.6
 
-## License
+# Configuration
 
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+Setting custom mining speed is planned for stable release which will be out in the future.
