@@ -1,0 +1,25 @@
+{
+	"schemaVersion": 1,
+	"id": "slow-mine",
+	"version": "${version}",
+	"name": "Slow Mine",
+	"description": "Makes mining speed slower or faster based on world difficulty",
+	"authors": [
+		"sillibeans"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/user/sillibeans",
+		"sources": "https://github.com/khoidauminh/slowmine"
+	},
+	"icon": "icon.png",
+	"license": "LGPL-3.0",
+	"environment": "*",
+	"entrypoints": {},
+	"mixins": [
+		"fivedurationswing.mixins.json"
+	],
+	"depends": {
+		"minecraft": "*",
+		"java": ">=${java}"
+	}
+}
