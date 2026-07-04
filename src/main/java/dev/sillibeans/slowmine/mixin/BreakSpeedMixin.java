@@ -13,6 +13,11 @@ public class BreakSpeedMixin {
 	public void changeBlockBreadSpeed(CallbackInfoReturnable<Float> cir) {
 		Player player = (Player) (Object) this;
 		World world = player.world;
+
+		if (world.isClientSide) {
+			return;
+		}
+
 		float multiplier = 1.0f;
 
 		switch (world.getDifficulty()) {
